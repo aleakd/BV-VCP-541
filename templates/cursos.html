@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+<div class="carrousel_cursos_contenedor centrado">
+  <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner cursos_car">
+      <div class="carousel-item active">
+        <img src="../static/img/curso1.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item cursos_car">
+        <img src="../static/img/curso2.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item cursos_car">
+        <img src="../static/img/curso3.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+
+
+<div class="box">
+    <div class="container">
+	<h1>Anotate en nuestos cursos con certificacion</h1>
+    <form method="post">
+    	<input type="text" name="name" placeholder="Nombre" required="required" style="display: block; margin-bottom: 10px;" />
+      <input type="text" name="last_name" placeholder="Apellido" required="required" style="display: block; margin-bottom: 10px;" />
+		<input type="email" name="email" placeholder="Email" required="required" style="display: block; margin-bottom: 10px;" >
+        <input type="text" name="empresa" placeholder="Empresa/Organizacion" style="display: block; margin-bottom: 10px;" />
+        <input type="text" name="telefono" placeholder="Telefono" required="required" style="display: block; margin-bottom: 10px;" />
+        <button type="submit" class="btn btn-primary  btn-lg">Apuntarme.</button>
+    </form>
+        </div>
+</div>
+{% with messages = get_flashed_messages() %}
+  {% if messages %}
+    <ul class=flashes>
+    {% for message in messages %}
+      <li>{{ message }}</li>
+    {% endfor %}
+    </ul>
+  {% endif %}
+{% endwith %}
+
+
+
+
+
+
+
+
+
+{% endblock %}

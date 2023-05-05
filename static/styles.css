@@ -1,0 +1,120 @@
+body {
+background: #f12711;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #f5af19, #f12711);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #f5af19, #f12711); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+text-align:center;
+
+}
+.img{
+padding: 80px;
+}
+.portada{
+width:600px;
+}
+p{
+text-align:center;
+font-size: 30px;
+padding:100px;
+}
+
+footer{
+background-color:grey;
+padding: 30px;
+}
+.creditos{
+font-size:20px;
+padding:20px;
+}
+.acceso{
+padding: 30px;
+}
+.icono-final{
+    margin: 20px;
+    color:rgb(72, 123, 123);
+}
+.icono-final:hover{
+    color: #4a24f6;
+}
+
+.card-text{
+font-size:20px;
+padding:5px;
+}
+
+/*carrousel  */
+
+.carrousel_cursos_contenedor.centrado {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 650px; /* ajusta el alto según tu necesidad */
+}
+
+.carousel-inner.cursos_car {
+  max-width: 700px; /* ajusta el ancho según tu necesidad */
+  max-height: 600px; /* ajusta el alto según tu necesidad */
+  margin: 0 auto;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+thead {
+  background-color: #555;
+  color: #fff;
+}
+/* tabla de descarga*/table {
+  border-collapse: separate;
+  border-spacing: 0;
+  margin: 20px auto;
+  max-width: 800px;
+  width: 100%;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+thead {
+  background-color: #f3f3f3;
+  color: #000;
+}
+
+th {
+  text-align: center;
+  padding: 20px;
+  border-bottom: 2px solid #ccc;
+  font-size: 22px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+td {
+  text-align: center;
+  padding: 20px;
+  border-bottom: 2px solid #eee;
+  font-size: 18px;
+}
+
+tbody tr:hover {
+  background-color: #fafafa;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f3f3f3;
+}
+
+@media screen and (max-width: 600px) {
+  table {
+    font-size: 14px;
+  }
+
+  th, td {
+    padding: 12px;
+    font-size: 18px;
+  }
+}
