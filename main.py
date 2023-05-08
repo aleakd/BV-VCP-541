@@ -16,7 +16,7 @@ login_manager = LoginManager()
 login_manager.init_app(app)
 
 
-##CREAr base de datos
+##CREAR bases de datos
 with app.app_context():
     class User(UserMixin, db.Model):
         id = db.Column(db.Integer, primary_key=True)
@@ -125,6 +125,10 @@ def cursos():
 
         return redirect(url_for("cursos"))
     return render_template("cursos.html")
+
+@app.route('/matafuegos')
+def matafuegos():
+    return render_template("matafuegos.html")
 
 
 if __name__ == '__main__':

@@ -3,13 +3,10 @@ background: #f12711;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #f5af19, #f12711);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to right, #f5af19, #f12711); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 text-align:center;
+}
 
-}
-.img{
-padding: 80px;
-}
 .portada{
-width:600px;
+width:70%;
 }
 p{
 text-align:center;
@@ -47,12 +44,12 @@ padding:5px;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 650px; /* ajusta el alto según tu necesidad */
+  height: 950px; /* ajusta el alto según tu necesidad */
 }
 
 .carousel-inner.cursos_car {
   max-width: 700px; /* ajusta el ancho según tu necesidad */
-  max-height: 600px; /* ajusta el alto según tu necesidad */
+  max-height: 900px; /* ajusta el alto según tu necesidad */
   margin: 0 auto;
 }
 
@@ -118,3 +115,37 @@ tbody tr:nth-child(even) {
     font-size: 18px;
   }
 }
+
+/* Estilos para el formulario */
+form {
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  padding: 20px;
+  width: 400px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px #ccc;
+}
+
+/* Estilos para los campos del formulario */
+input[type=text], input[type=email], textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Estilos para el botón del formulario */
+button[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.logo{
+width: 75px;
+}
+

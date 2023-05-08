@@ -19,18 +19,18 @@
 <header>
   <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme='dark'>
   <div class="container-fluid">
-    <a class="navbar-brand" href="{{ url_for('index') }}"><i class="fa-solid fa-fire-extinguisher fa-fade" style="color: #eb1e1e;"></i> BBVV VCP</a>
+    <a class="navbar-brand" href="{{ url_for('index') }}"><i class="fa-solid fa-fire-extinguisher fa-fade" style="color: #eb1e1e;"></i> <img class="logo" src="../static/img/bvvcp.jpg"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
          {% if not current_user.is_authenticated %}
-        <li class="nav-item">
+        <!-- <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="register">registrese</a>
-        </li>
+        </li> -->
         <li class="nav-item">
-          <a class="nav-link" href="login">logearse</a>
+          <a class="nav-link" href="login">Acceso</a>
         </li>
         {% endif %}
 
@@ -44,7 +44,12 @@
 {% endif %}
         <li class="nav-item">
           <a class="nav-link" href="unidades">Nosotros</a>
+        </li>
+          <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="{{ url_for('matafuegos') }}">Matafuegos</a>
+        </li>
       </ul>
+
     </div>
   </div>
 </nav>
@@ -52,7 +57,7 @@
 <body>
 {% block content %}
 {% endblock %}
-<div class></divclass>
+<div class></div>
 <footer class="piepag" id="white-seccion footer">
     <a href="https://api.whatsapp.com/send?phone=5493541661516" target="_blank"><i class="icono-final fa-brands fa-whatsapp fa-2x"></i></a><i class="icono-final fa-brands fa-facebook fa-2x"></i><a href="https://www.instagram.com/ale2419m/" target="_blank"><i class="icono-final fa-brands fa-instagram fa-2x"></i></a>
      <i class="icono-final fa-sharp fa-solid fa-envelope fa-2x"></i>

@@ -40,15 +40,21 @@
     </form>
         </div>
 </div>
+
 {% with messages = get_flashed_messages() %}
   {% if messages %}
+
+<div style="background-color: #ffc107; color: #ffffff; font-family: Arial, sans-serif; font-size: 68px;">
     <ul class=flashes>
     {% for message in messages %}
       <li>{{ message }}</li>
     {% endfor %}
     </ul>
+  </div>
   {% endif %}
 {% endwith %}
+
+
 
 
 
