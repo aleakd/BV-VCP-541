@@ -4,14 +4,30 @@ background: -webkit-linear-gradient(to right, #f5af19, #f12711);  /* Chrome 10-2
 background: linear-gradient(to right, #f5af19, #f12711); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 text-align:center;
 }
-
-.portada{
-width:70%;
+header{
+font-size:25px;
+font-family:"Merriweather";
 }
+.portada{
+width:40%;
+margin:80px;
+border-radius: 40%;
+}
+
+.titulo_index{
+font-family:"Roboto Slab";
+padding:50px;
+}
+
+
 p{
 text-align:center;
 font-size: 30px;
 padding:100px;
+}
+
+.foto_portada2{
+width:80%
 }
 
 footer{
@@ -33,9 +49,19 @@ padding: 30px;
     color: #4a24f6;
 }
 
+.card{
+background-color: #FFF7D4;
+
+}
+.card:hover{
+background-color: #F7E1AE;
+
+}
 .card-text{
-font-size:20px;
+font-family: "Sacramento";
+font-size:24px;
 padding:5px;
+color:#088395;
 }
 
 /*carrousel  */
@@ -47,7 +73,7 @@ padding:5px;
   height: 950px; /* ajusta el alto según tu necesidad */
 }
 
-.carousel-inner.cursos_car {
+.cursos_car {
   max-width: 700px; /* ajusta el ancho según tu necesidad */
   max-height: 900px; /* ajusta el alto según tu necesidad */
   margin: 0 auto;
@@ -148,6 +174,7 @@ button[type=submit] {
 }
 .logo{
 width: 75px;
+border-radius: 30%;
 }
 
 .viky{
@@ -155,3 +182,15 @@ width: 800px;
 height: 700px;
 }
 
+.vehiculos{
+background-color: red;
+}
+
+
+.cursos_contactos{
+background: #DCE35B;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #45B649, #DCE35B);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #45B649, #DCE35B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+padding: 150px;
+}
