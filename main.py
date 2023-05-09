@@ -120,7 +120,7 @@ def cursos():
         )
         db.session.add(nuevo_cursante)
         db.session.commit()
-        flash("Felicitaciones ya estas mas cerca de certificarte con nosotros")
+        flash("Muchas Gracias por inscribirte en breve nos pondermos en contacto con usted")
 
 
         return redirect(url_for("cursos"))
