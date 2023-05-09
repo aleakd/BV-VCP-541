@@ -126,6 +126,7 @@ def cursos():
         return redirect(url_for("cursos"))
     return render_template("cursos.html")
 
+
 @app.route('/matafuegos')
 def matafuegos():
     return render_template("matafuegos.html")
