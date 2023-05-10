@@ -4,19 +4,31 @@ background: -webkit-linear-gradient(to right, #f5af19, #f12711);  /* Chrome 10-2
 background: linear-gradient(to right, #f5af19, #f12711); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 text-align:center;
 }
+
 header{
-font-size:25px;
+font-size:20px;
 font-family:"Merriweather";
 }
+
+.seccion1{
+background-image: url("../static/img/foto1.jpg");
+background-size: cover;
+margin-top: 20px;
+margin-bottom:30px;
+}
+
 .portada{
 width:40%;
 margin:80px;
-border-radius: 40%;
+border-radius: 50%;
+ box-shadow: 10px 30px 10px rgba(100, 0, 5, 0.5);
 }
 
 .titulo_index{
 font-family:"Roboto Slab";
+font-size:70px;
 padding:50px;
+color: #CFD2CF;
 }
 
 p{
@@ -26,12 +38,46 @@ padding:100px;
 }
 
 .foto_portada2{
-width:80%
+width:1000px;
+height:750px;
+margin:40px;
 }
+.titulo_portada2{
+position: absolute;
+top: 20%;
+font-size:30px;
+text-align:center;
+margin:20px 400px;
+}
+
+.carrousel_nosotros{
+background: #333333;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #dd1818, #333333);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #dd1818, #333333); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+padding:50px;
+}
+.nosotros_unidades{
+height:800px;
+width:750px;
+}
+
+.login{
+position:absolute;
+left:37%;
+top:34%;
+margin:30px;
+background-color:red;
+}
+.imagen_login{
+padding:40px;
+}
+
+
 
 footer{
 background-color:grey;
-padding: 30px;
+padding: 25px;
 }
 .creditos{
 font-size:20px;
@@ -57,7 +103,7 @@ background-color: #F7E1AE;
 
 }
 .card-text{
-font-family: "Sacramento";
+font-family: "Ubuntu";
 font-size:24px;
 padding:5px;
 color:#088395;
@@ -181,15 +227,25 @@ width: 800px;
 height: 700px;
 }
 
-.vehiculos{
-background-color: red;
-}
-
-
 .cursos_contactos{
 background: #DCE35B;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #45B649, #DCE35B);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to right, #45B649, #DCE35B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
 padding: 150px;
+}
+
+.imagen_nosotros{
+width: 600px;
+height: 500px;
+}
+
+.nosotros_bloque2{
+padding:50px;
+background: #bdc3c7;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.informacion_importante{
+padding:20px;
 }

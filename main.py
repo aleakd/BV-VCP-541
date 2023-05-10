@@ -6,7 +6,7 @@ from flask_login import UserMixin, login_user, LoginManager, login_required, cur
 
 app = Flask(__name__)
 
-
+##CREAR bases de datos
 app.config['SECRET_KEY'] = 'ale12345678ale'
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///bomberosvcp.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
@@ -16,7 +16,7 @@ login_manager = LoginManager()
 login_manager.init_app(app)
 
 
-##CREAR bases de datos
+##CREAR TABLA EN LA BASE DE DATOS
 with app.app_context():
     class User(UserMixin, db.Model):
         id = db.Column(db.Integer, primary_key=True)

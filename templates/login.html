@@ -1,20 +1,23 @@
 {% extends "base.html" %}
 {% block content %}
+<div class="imagen_login">
+    <h1>Registrate si sos Bombero</h1>
+    <h4>Accede a informacion relevante para el cuerpo activo</h4>
+<img  src="../static/img/f2byn.jpg">
+    </div>
 
 <div class="box">
-    <h1>Login</h1>
     {% with messages = get_flashed_messages() %}
     {% if messages %}
     {% for message in messages %}
     <p>{{ message }}</p>
 
-
     {% endfor %}
     {% endif %}
     {% endwith %}
 
-    <img src="../static/img/bvvcp.jpg">
-    <form action="{{ url_for('login') }}" method="post">
+
+    <form  class=login action="{{ url_for('login') }}" method="post">
         <input type="text" name="email" placeholder="Email" required="required"/>
         <input type="password" name="password" placeholder="Password" required="required"/>
         <button type="submit" class="btn btn-primary btn-lg">Ingresar.</button>
